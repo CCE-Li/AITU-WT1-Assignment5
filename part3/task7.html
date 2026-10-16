@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 7. Calculator | Assignment #5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">JS</span>
+        <span>Assignment #5<span class="brand-sub"> &middot; DOM &amp; Events</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../part1/task0.html">Task 0</a></li>
+        <li><a href="../part1/task1.html">Task 1</a></li>
+        <li><a href="../part2/task2.html">Task 2</a></li>
+        <li><a href="../part2/task3.html">Task 3</a></li>
+        <li><a href="../part2/task4.html">Task 4</a></li>
+        <li><a href="../part3/task5.html">Task 5</a></li>
+        <li><a href="../part3/task6.html">Task 6</a></li>
+        <li><a href="../part3/task7.html" class="active">Task 7</a></li>
+        <li><a href="../part4/task8.html">Task 8</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-head">
+      <p class="eyebrow">Part 3 &middot; Events</p>
+      <h1>Task 7. Calculator</h1>
+      <p class="lead">
+        A basic calculator that performs addition, subtraction, multiplication and division. All button
+        clicks are handled by one <code>click</code> listener on the keypad, which reads the
+        <code>data-action</code> attribute of the pressed key.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Calculator</h2>
+      <div class="calculator">
+        <div class="calc-display" id="calc-display" aria-live="polite">0</div>
+        <div class="calc-keys" id="calc-keys">
+          <button type="button" class="clear" data-action="clear">C</button>
+          <button type="button" class="operator" data-action="operator" data-value="/">&divide;</button>
+          <button type="button" class="operator" data-action="operator" data-value="*">&times;</button>
+          <button type="button" data-action="backspace">&#9003;</button>
+          <button type="button" data-action="digit" data-value="7">7</button>
+          <button type="button" data-action="digit" data-value="8">8</button>
+          <button type="button" data-action="digit" data-value="9">9</button>
+          <button type="button" class="operator" data-action="operator" data-value="-">&minus;</button>
+          <button type="button" data-action="digit" data-value="4">4</button>
+          <button type="button" data-action="digit" data-value="5">5</button>
+          <button type="button" data-action="digit" data-value="6">6</button>
+          <button type="button" class="operator" data-action="operator" data-value="+">+</button>
+          <button type="button" data-action="digit" data-value="1">1</button>
+          <button type="button" data-action="digit" data-value="2">2</button>
+          <button type="button" data-action="digit" data-value="3">3</button>
+          <button type="button" class="equals" data-action="equals">=</button>
+          <button type="button" class="zero" data-action="digit" data-value="0">0</button>
+          <button type="button" data-action="dot">.</button>
+        </div>
+      </div>
+      <p class="card-note" style="margin-top:1rem">
+        Every calculation is also printed to the browser console with <code>console.log()</code>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Assignment #5 &middot; JavaScript Basics (DOM Manipulation &amp; Events)</span>
+      <span>LiYixin &middot; Group SE-2526 &middot; AITU</span>
+    </div>
+  </footer>
+
+  <script src="../js/task7.js"></script>
+</body>
+
+</html>

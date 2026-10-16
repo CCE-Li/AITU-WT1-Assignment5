@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4. Creating &amp; Removing Elements | Assignment #5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">JS</span>
+        <span>Assignment #5<span class="brand-sub"> &middot; DOM &amp; Events</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../part1/task0.html">Task 0</a></li>
+        <li><a href="../part1/task1.html">Task 1</a></li>
+        <li><a href="../part2/task2.html">Task 2</a></li>
+        <li><a href="../part2/task3.html">Task 3</a></li>
+        <li><a href="../part2/task4.html" class="active">Task 4</a></li>
+        <li><a href="../part3/task5.html">Task 5</a></li>
+        <li><a href="../part3/task6.html">Task 6</a></li>
+        <li><a href="../part3/task7.html">Task 7</a></li>
+        <li><a href="../part4/task8.html">Task 8</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-head">
+      <p class="eyebrow">Part 2 &middot; DOM Manipulation</p>
+      <h1>Task 4. Creating &amp; Removing Elements</h1>
+      <p class="lead">
+        The <strong>Add Item</strong> button builds a new <code>&lt;li&gt;</code> element with
+        <code>document.createElement()</code> and appends it to the list. The <strong>Remove Item</strong>
+        button deletes the last element of the list.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Dynamic list</h2>
+      <div class="btn-row" style="margin-bottom:0">
+        <button class="btn" type="button" id="add-item">Add Item</button>
+        <button class="btn danger" type="button" id="remove-item">Remove Item</button>
+      </div>
+      <ul class="item-list" id="item-list"></ul>
+      <div class="stats">
+        <span>Items in the list: <strong id="item-count">0</strong></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Assignment #5 &middot; JavaScript Basics (DOM Manipulation &amp; Events)</span>
+      <span>LiYixin &middot; Group SE-2526 &middot; AITU</span>
+    </div>
+  </footer>
+
+  <script src="../js/task4.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 0. First Script | Assignment #5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">JS</span>
+        <span>Assignment #5<span class="brand-sub"> &middot; DOM &amp; Events</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../part1/task0.html" class="active">Task 0</a></li>
+        <li><a href="../part1/task1.html">Task 1</a></li>
+        <li><a href="../part2/task2.html">Task 2</a></li>
+        <li><a href="../part2/task3.html">Task 3</a></li>
+        <li><a href="../part2/task4.html">Task 4</a></li>
+        <li><a href="../part3/task5.html">Task 5</a></li>
+        <li><a href="../part3/task6.html">Task 6</a></li>
+        <li><a href="../part3/task7.html">Task 7</a></li>
+        <li><a href="../part4/task8.html">Task 8</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-head">
+      <p class="eyebrow">Part 1 &middot; Introduction to JavaScript</p>
+      <h1>Task 0. First Script</h1>
+      <p class="lead">
+        This page includes an external JavaScript file. The script prints the student's name and group
+        with <code>console.log()</code> and shows a friendly alert when the page loads.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>What happens on load</h2>
+      <ul class="checklist">
+        <li>An alert dialog with the message <strong>&ldquo;Hello, JavaScript World!&rdquo;</strong> appears.</li>
+        <li>Open the browser DevTools with <code>F12</code> and switch to the <strong>Console</strong> tab to read the printed name and group.</li>
+      </ul>
+      <div class="btn-row" style="margin-bottom:0">
+        <button class="btn secondary" type="button" id="show-alert">Show the alert again</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>The included script</h2>
+      <p class="card-note">
+        Linked from this page with <code>&lt;script src="../js/task0.js"&gt;&lt;/script&gt;</code>
+      </p>
+      <pre>const studentName = "LiYixin";
+const studentGroup = "SE-2526";
+
+console.log("Student: " + studentName);
+console.log("Group: " + studentGroup);
+
+alert("Hello, JavaScript World!");</pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Assignment #5 &middot; JavaScript Basics (DOM Manipulation &amp; Events)</span>
+      <span>LiYixin &middot; Group SE-2526 &middot; AITU</span>
+    </div>
+  </footer>
+
+  <script src="../js/task0.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 8. Interactive To-Do List | Assignment #5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">JS</span>
+        <span>Assignment #5<span class="brand-sub"> &middot; DOM &amp; Events</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../part1/task0.html">Task 0</a></li>
+        <li><a href="../part1/task1.html">Task 1</a></li>
+        <li><a href="../part2/task2.html">Task 2</a></li>
+        <li><a href="../part2/task3.html">Task 3</a></li>
+        <li><a href="../part2/task4.html">Task 4</a></li>
+        <li><a href="../part3/task5.html">Task 5</a></li>
+        <li><a href="../part3/task6.html">Task 6</a></li>
+        <li><a href="../part3/task7.html">Task 7</a></li>
+        <li><a href="../part4/task8.html" class="active">Task 8</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-head">
+      <p class="eyebrow">Part 4 &middot; Mini Project</p>
+      <h1>Task 8. Interactive To-Do List</h1>
+      <p class="lead">
+        Add tasks with the input field, mark them as completed with the checkbox (strike-through effect)
+        and remove them with the <strong>Delete</strong> button. All tasks are kept in an array in memory -
+        no database or local storage is used, so the list resets when the page is reloaded.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>My tasks</h2>
+      <form class="todo-form" id="todo-form">
+        <input class="field" type="text" id="todo-input" placeholder="Add a new task..." autocomplete="off">
+        <button class="btn" type="submit" id="add-task">Add Task</button>
+      </form>
+
+      <ul class="todo-list" id="todo-list"></ul>
+      <p class="todo-empty" id="todo-empty">No tasks yet. Add your first task above.</p>
+
+      <div class="stats">
+        <span>Total: <strong id="total-count">0</strong></span>
+        <span>Completed: <strong id="done-count">0</strong></span>
+        <span>Remaining: <strong id="left-count">0</strong></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Assignment #5 &middot; JavaScript Basics (DOM Manipulation &amp; Events)</span>
+      <span>LiYixin &middot; Group SE-2526 &middot; AITU</span>
+    </div>
+  </footer>
+
+  <script src="../js/task8.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3. Changing Styles | Assignment #5</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">JS</span>
+        <span>Assignment #5<span class="brand-sub"> &middot; DOM &amp; Events</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../part1/task0.html">Task 0</a></li>
+        <li><a href="../part1/task1.html">Task 1</a></li>
+        <li><a href="../part2/task2.html">Task 2</a></li>
+        <li><a href="../part2/task3.html" class="active">Task 3</a></li>
+        <li><a href="../part2/task4.html">Task 4</a></li>
+        <li><a href="../part3/task5.html">Task 5</a></li>
+        <li><a href="../part3/task6.html">Task 6</a></li>
+        <li><a href="../part3/task7.html">Task 7</a></li>
+        <li><a href="../part4/task8.html">Task 8</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-head">
+      <p class="eyebrow">Part 2 &middot; DOM Manipulation</p>
+      <h1>Task 3. Changing Styles</h1>
+      <p class="lead">
+        One button changes the background color of the container and another changes the font size of
+        the text inside it. Both modify the <code>style</code> property of the same element.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Styled container</h2>
+      <div class="btn-row">
+        <button class="btn" type="button" id="change-color">Change background color</button>
+        <button class="btn secondary" type="button" id="change-font-size">Change font size</button>
+      </div>
+      <div class="box" id="style-box">
+        <h3>I am a &lt;div&gt; container</h3>
+        <p>
+          My background color and the size of this text are controlled by JavaScript. Press the buttons
+          above to update my inline styles.
+        </p>
+      </div>
+      <ul class="result-list">
+        <li><span class="label">current background</span><span class="value" id="color-value">default</span></li>
+        <li><span class="label">current font size</span><span class="value" id="font-size-value">16px</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Assignment #5 &middot; JavaScript Basics (DOM Manipulation &amp; Events)</span>
+      <span>LiYixin &middot; Group SE-2526 &middot; AITU</span>
+    </div>
+  </footer>
+
+  <script src="../js/task3.js"></script>
+</body>
+
+</html>
